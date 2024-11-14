@@ -31,7 +31,7 @@ jobs:
     name: Create new landing zone file from inputs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           persist-credentials: true
           fetch-depth: 0
