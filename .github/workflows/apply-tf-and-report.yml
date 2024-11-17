@@ -59,3 +59,4 @@ jobs:
           bearerToken: ${{ fromJson(steps.get-token.outputs.response).accessToken }}
           customHeaders: '{"Content-Type": "application/json"}'
           data: '{"status": "SUCCESS", "link": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"}'
+# TODO: Need to fix the workflow
