@@ -29,7 +29,7 @@ on:
 jobs:
   create-landing-zone-file:
     name: Create new landing zone file from inputs
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
         with:
@@ -48,7 +48,7 @@ jobs:
           git push --force-with-lease origin main
   # report-deployment:
   #   name: Report new deployment Entity
-  #   runs-on: ubuntu-latest
+  #   runs-on: ubuntu-22.04
   #   steps:
   #     - name: Extract SHA short
   #       run: echo "SHA_SHORT=${GITHUB_SHA:0:7}" >> $GITHUB_ENV
